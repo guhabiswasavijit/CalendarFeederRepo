@@ -1,0 +1,17 @@
+package org.seven.imageservlet.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping(value = "/")
+public class CalendarFeederController {
+
+    @GetMapping
+    public String getRequest(){
+        return "Baeldung DispatcherServlet";
+    }
+}
+
+
